@@ -1,5 +1,5 @@
 
-# Komplieye - Unified Audit & Compliance Platform
+# Kalolytics - Unified Audit & Compliance Platform
 
 ![Komplieye Platform](attached_assets/1_1756015037645.webp)
 
