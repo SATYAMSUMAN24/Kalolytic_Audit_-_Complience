@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Komplieye - Unified Audit & Compliance Platform for Banks & NBFCs</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="audit management system, compliance management system, RBI compliance software, banking audit automation" name="keywords">
+    <meta content="Komplieye is an integrated Audit Management System (AMS) and Compliance Management System (CMS) built for banks and NBFCs to stay ahead of regulatory requirements and internal risks." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt text-primary me-2"></i>Noida, India</small>
+                <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>24/7 Support</small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small><i class="fa fa-envelope text-primary me-2"></i>sanjay.yadav@kalolytic.com</small>
+                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>+91 22 6789 0123</small>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <img src="/logo/01.png" alt="Komplieye Logo" class="img-fluid" style="height:50px;">
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Solutions</a>
+                        <div class="dropdown-menu border-light m-0">
+                            <a href="ams.html" class="dropdown-item">Audit Management System</a>
+                            <a href="cms.html" class="dropdown-item">Compliance & AML Management</a>
+                            <a href="ai.html" class="dropdown-item">AI & Automation Suite</a>
+                            <a href="role.html" class="dropdown-item">Role-Based Features</a>
+                            <a href="usecases.html" class="dropdown-item">Real-world Use Cases</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Resources</a>
+                        <div class="dropdown-menu border-light m-0">
+                            <a href="project.html" class="dropdown-item">Case Studies</a>
+                            <a href="feature.html" class="dropdown-item">Features</a>
+                            <a href="team.html" class="dropdown-item">Our Team</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                            <a href="blog.html" class="dropdown-item">Blog</a>
+                            <a href="404.html" class="dropdown-item">Roadmap</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+
+               <div class="d-none d-lg-flex ms-2">
+                    <button class="btn btn-primary btn-sm rounded-pill me-3" data-bs-toggle="modal" data-bs-target="#demoModal">
+                        <small>Request Demo</small>
+                    </button>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                        <small class="fab fa-facebook-f text-primary"></small>
+                    </a>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                        <small class="fab fa-twitter text-primary"></small>
+                    </a>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                        <small class="fab fa-linkedin-in text-primary"></small>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.0s">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2500">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-8">
+                                    <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">Welcome to Komplieye</p>
+                                    <h1 class="display-1 mb-4 animated slideInDown">AI-Powered Unified Audit & Compliance Platform for Banks & NBFCs</h1>
+                                    <div class="d-flex gap-3 animated slideInDown">
+                                        <a href="contact.html" class="btn btn-primary py-3 px-5">Request a Demo</a>
+                                        <a href="contact.html" class="btn btn-outline-light py-3 px-5">Talk to Sales</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7">
+                                    <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">AI Intelligence</p>
+                                    <h1 class="display-1 mb-4 animated slideInDown">Intelligent Document Processing & Automated Risk Assessments</h1>
+                                    <a href="ai.html" class="btn btn-primary py-3 px-5 animated slideInDown">Explore AI Features</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="/logo/slider1.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7">
+                                    <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">AML & Transaction Monitoring</p>
+                                    <h1 class="display-1 mb-4 animated slideInDown">Automated Data Sourcing & AML Screening with Transaction Monitoring</h1>
+                                    <a href="cms.html" class="btn btn-primary py-3 px-5 animated slideInDown">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="/logo/slider2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7">
+                                    <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">UBO & Policy Intelligence</p>
+                                    <h1 class="display-1 mb-4 animated slideInDown">UBO Unwrapping & Policy Intelligence Hub with AI-Driven Dashboards</h1>
+                                    <a href="service.html" class="btn btn-primary py-3 px-5 animated slideInDown">Discover Solutions</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="/logo/slider-3.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7">
+                                    <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">Complete Automation</p>
+                                    <h1 class="display-1 mb-4 animated slideInDown">End-to-End AI-Powered Workflows & Reporting Solutions</h1>
+                                    <a href="role.html" class="btn btn-primary py-3 px-5 animated slideInDown">View Features</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4 align-items-end mb-4">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" src="img/about.jpg">
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Why Komplieye?</p>
+                    <h1 class="display-5 mb-4">We Help Banks & NBFCs Stay Audit-Ready & Compliant</h1>
+                    <p class="mb-4">Komplieye is an integrated Audit Management System (AMS) and Compliance Management System (CMS) built specifically for banks and NBFCs to stay ahead of regulatory requirements and internal risks. It combines audit automation and compliance workflow management into one comprehensive platform.</p>
+                    <div class="border rounded p-4">
+                        <nav>
+                            <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                                <button class="nav-link fw-semi-bold active" id="nav-story-tab" data-bs-toggle="tab" data-bs-target="#nav-story" type="button" role="tab" aria-controls="nav-story" aria-selected="true">Platform</button>
+                                <button class="nav-link fw-semi-bold" id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#nav-mission" type="button" role="tab" aria-controls="nav-mission" aria-selected="false">Mission</button>
+                                <button class="nav-link fw-semi-bold" id="nav-vision-tab" data-bs-toggle="tab" data-bs-target="#nav-vision" type="button" role="tab" aria-controls="nav-vision" aria-selected="false">Vision</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-story" role="tabpanel" aria-labelledby="nav-story-tab">
+                                <p>Designed specifically for the banking sector, Komplieye comes pre-configured with industry best practices and RBI guidelines out-of-the-box.</p>
+                                <p class="mb-0">By unifying audit and compliance in a single solution, Komplieye eliminates silos and manual effort – empowering your team to save time, improve accuracy, and stay "audit-ready" at all times.</p>
+                            </div>
+                            <div class="tab-pane fade" id="nav-mission" role="tabpanel" aria-labelledby="nav-mission-tab">
+                                <p>To streamline audits, ensure RBI compliance, and reduce operational risk for financial institutions through intelligent automation.</p>
+                                <p class="mb-0">We empower banks and NBFCs to ensure 100% compliance, mitigate risks proactively, and respond to regulatory changes with agility.</p>
+                            </div>
+                            <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
+                                <p>To be the leading unified audit and compliance platform that delivers measurable outcomes: time saved in audits, zero missed filings, and a stronger compliance culture.</p>
+                                <p class="mb-0">Creating a future where regulatory compliance is automated, transparent, and risk-free for all financial institutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border rounded p-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-4">
+                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="h-100">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-shield-alt text-white"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <h4>Enterprise Security</h4>
+                                    <span>Robust security and scalable architecture for enterprise IT environments</span>
+                                </div>
+                                <div class="border-end d-none d-lg-block"></div>
+                            </div>
+                            <div class="border-bottom mt-4 d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                        <div class="h-100">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-brain text-white"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <h4>AI-Driven Insights</h4>
+                                    <span>Intelligent analysis of RBI circulars with automated compliance controls</span>
+                                </div>
+                                <div class="border-end d-none d-lg-block"></div>
+                            </div>
+                            <div class="border-bottom mt-4 d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="h-100">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-clock text-white"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <h4>Real-time Monitoring</h4>
+                                    <span>Live compliance tracking across all branches with automated alerts</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+     <!-- Facts Start -->
+    <div class="container-fluid facts my-5 py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <i class="fa fa-users fa-3x text-white mb-3"></i>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
+                    <span class="fs-5 text-white">Happy Clients</span>
+                    <hr class="bg-white w-25 mx-auto mb-0">
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <i class="fa fa-check fa-3x text-white mb-3"></i>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
+                    <span class="fs-5 text-white">Projects Completed</span>
+                    <hr class="bg-white w-25 mx-auto mb-0">
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
+                    <span class="fs-5 text-white">Dedicated Staff</span>
+                    <hr class="bg-white w-25 mx-auto mb-0">
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <i class="fa fa-award fa-3x text-white mb-3"></i>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
+                    <span class="fs-5 text-white">Awards Achieved</span>
+                    <hr class="bg-white w-25 mx-auto mb-0">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+    <!-- Facts End -->
+
+
+    <!-- Features Start -->
+    <div class="container-xxl feature py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Key Differentiators</p>
+                    <h1 class="display-5 mb-4">What Sets Komplieye Apart</h1>
+                    <p class="mb-4">Unlike generic tools, Komplieye is purpose-built as an audit automation platform and RBI compliance software for Indian financial institutions. You get end-to-end coverage with tightly integrated modules and AI-driven insights.</p>
+                    <a class="btn btn-primary py-3 px-5" href="feature.html">Learn More</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="feature-box border rounded p-4">
+                                        <i class="fa fa-robot fa-3x text-primary mb-3"></i>
+                                        <h4 class="mb-3">Automation First</h4>
+                                        <p class="mb-3">Risk-based audit planning with automated compliance workflows and real-time dashboards</p>
+                                        <a class="fw-semi-bold" href="feature.html">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="feature-box border rounded p-4">
+                                        <i class="fa fa-link fa-3x text-primary mb-3"></i>
+                                        <h4 class="mb-3">Unified Integration</h4>
+                                        <p class="mb-3">Seamless integration where audit findings automatically trigger compliance tasks</p>
+                                        <a class="fw-semi-bold" href="feature.html">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                            <div class="feature-box border rounded p-4">
+                                <i class="fa fa-gavel fa-3x text-primary mb-3"></i>
+                                <h4 class="mb-3">RBI Ready</h4>
+                                <p class="mb-3">Pre-configured with RBI guidelines and automated analysis of new circulars for policy updates</p>
+                                <a class="fw-semi-bold" href="feature.html">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl service py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Solutions</p>
+                <h1 class="display-5 mb-5">Comprehensive Audit & Compliance Platform</h1>
+            </div>
+            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-4">
+                    <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
+                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                            <h5 class="m-0"><i class="fa fa-clipboard-check text-primary me-3"></i>AI-Powered Audit Management</h5>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                            <h5 class="m-0"><i class="fa fa-shield-alt text-primary me-3"></i>AML & Compliance Intelligence</h5>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                            <h5 class="m-0"><i class="fa fa-brain text-primary me-3"></i>AI Document Processing</h5>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                            <h5 class="m-0"><i class="fa fa-chart-line text-primary me-3"></i>UBO & Risk Analytics</h5>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="tab-content w-100">
+                        <div class="tab-pane fade show active" id="tab-pane-1">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute rounded w-100 h-100" src="img/service-1.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-4">AI-Powered Audit Workflow Automation</h3>
+                                    <p class="mb-4">Intelligent risk-based audit planning with AI-driven workflows. Automated scheduling, execution, and closure with AI-enhanced checklists and real-time intelligent progress tracking across all branches.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>AI-driven risk assessment & planning</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Intelligent automated review processes</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>AI-powered reporting & analytics</p>
+                                    <a href="ams.html" class="btn btn-primary py-3 px-4 px-md-5 mt-3">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-2">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute rounded w-100 h-100" src="img/service-2.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-4">AML & Compliance Intelligence Suite</h3>
+                                    <p class="mb-4">Advanced AML screening with automated data sourcing and transaction monitoring. AI-powered policy intelligence hub analyzes RBI circulars and ensures comprehensive compliance monitoring across all touchpoints.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Automated AML screening & monitoring</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Real-time transaction monitoring</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Policy intelligence hub with AI analysis</p>
+                                    <a href="cms.html" class="btn btn-primary py-3 px-4 px-md-5 mt-3">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-3">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute rounded w-100 h-100" src="img/service-3.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-4">Intelligent Document Processing & Analytics</h3>
+                                    <p class="mb-4">Advanced AI-powered document processing that automatically extracts, analyzes, and processes regulatory documents. Intelligent data extraction with automated validation and seamless integration with compliance workflows.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>AI-powered document analysis & extraction</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Automated data validation & processing</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Intelligent workflow integration</p>
+                                    <a href="ai.html" class="btn btn-primary py-3 px-4 px-md-5 mt-3">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-4">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute rounded w-100 h-100" src="img/service-4.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-4">UBO Unwrapping & Advanced Risk Analytics</h3>
+                                    <p class="mb-4">Complete UBO (Ultimate Beneficial Owner) unwrapping with AI-driven dashboards and advanced risk assessment capabilities. Automated risk scoring with comprehensive analytics and intelligent reporting systems.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Automated UBO unwrapping & analysis</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>AI-driven risk assessment & scoring</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Advanced analytics & reporting dashboards</p>
+                                    <a href="service.html" class="btn btn-primary py-3 px-4 px-md-5 mt-3">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Callback Start -->
+    <div class="container-fluid callback my-5 pt-5">
+        <div class="container pt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="bg-white border rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                            <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Get Started</p>
+                            <h1 class="display-5 mb-5">Request a Demo</h1>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="mail" placeholder="Your Email">
+                                    <label for="mail">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
+                                    <label for="mobile">Your Mobile</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <select class="form-control" id="organization">
+                                        <option value="">Select Organization Type</option>
+                                        <option value="bank">Bank</option>
+                                        <option value="nbfc">NBFC</option>
+                                        <option value="other">Other Financial Institution</option>
+                                    </select>
+                                    <label for="organization">Organization Type</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Tell us about your compliance challenges" id="message" style="height: 100px"></textarea>
+                                    <label for="message">Your Requirements</label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Request Demo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Callback End -->
+
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Success Stories</p>
+                <h1 class="display-5 mb-5">Our Implementation Highlights</h1>
+            </div>
+            <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.3s">
+                <div class="project-item pe-5 pb-5">
+                    <div class="project-img mb-3">
+                        <img class="img-fluid rounded" src="img/service-1.jpg" alt="">
+                        <a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
+                    </div>
+                    <div class="project-title">
+                        <h4 class="mb-0">Audit Automation</h4>
+                    </div>
+                </div>
+                <div class="project-item pe-5 pb-5">
+                    <div class="project-img mb-3">
+                        <img class="img-fluid rounded" src="img/service-2.jpg" alt="">
+                        <a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
+                    </div>
+                    <div class="project-title">
+                        <h4 class="mb-0">Compliance Management</h4>
+                    </div>
+                </div>
+                <div class="project-item pe-5 pb-5">
+                    <div class="project-img mb-3">
+                        <img class="img-fluid rounded" src="img/service-3.jpg" alt="">
+                        <a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
+                    </div>
+                    <div class="project-title">
+                        <h4 class="mb-0">RBI Reporting</h4>
+                    </div>
+                </div>
+                <div class="project-item pe-5 pb-5">
+                    <div class="project-img mb-3">
+                        <img class="img-fluid rounded" src="img/service-4.jpg" alt="">
+                        <a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
+                    </div>
+                    <div class="project-title">
+                        <h4 class="mb-0">Risk Management</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Team</p>
+                <h1 class="display-5 mb-5">Expert Leadership</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <img class="img-fluid rounded" src="img/team-1.jpg" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">Rajesh Kumar</h4>
+                            <p>Chief Technology Officer</p>
+                            <div class="team-social d-flex">
+                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <img class="img-fluid rounded" src="img/team-2.jpg" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">Priya Sharma</h4>
+                            <p>Head of Compliance</p>
+                            <div class="team-social d-flex">
+                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <img class="img-fluid rounded" src="img/team-3.jpg" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">Amit Patel</h4>
+                            <p>Banking Solutions Expert</p>
+                            <div class="team-social d-flex">
+                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Testimonials</p>
+                <h1 class="display-5 mb-5">What Our Clients Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
+                <div class="testimonial-item">
+                    <div class="testimonial-text border rounded p-4 pt-5 mb-5">
+                        <div class="btn-square bg-white border rounded-circle">
+                            <i class="fa fa-quote-right fa-2x text-primary"></i>
+                        </div>
+                        Komplieye has transformed our audit process. We've reduced audit time by 75% and achieved 100% compliance across all branches. The automated RBI returns filing has been a game-changer.
+                    </div>
+                    <img class="rounded-circle mb-3" src="img/testimonial-1.jpg" alt="">
+                    <h4>Suresh Menon</h4>
+                    <span>Chief Risk Officer, ABC Bank</span>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-text border rounded p-4 pt-5 mb-5">
+                        <div class="btn-square bg-white border rounded-circle">
+                            <i class="fa fa-quote-right fa-2x text-primary"></i>
+                        </div>
+                        The AI-powered regulatory analysis has helped us stay ahead of RBI changes. Komplieye's unified platform eliminated our compliance silos and improved our overall risk management.
+                    </div>
+                    <img class="rounded-circle mb-3" src="img/testimonial-2.jpg" alt="">
+                    <h4>Kavitha Reddy</h4>
+                    <span>Compliance Head, XYZ NBFC</span>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-text border rounded p-4 pt-5 mb-5">
+                        <div class="btn-square bg-white border rounded-circle">
+                            <i class="fa fa-quote-right fa-2x text-primary"></i>
+                        </div>
+                        Implementation was seamless and the support team is excellent. Komplieye's real-time monitoring has given us complete visibility into our compliance status across all operations.
+                    </div>
+                    <img class="rounded-circle mb-3" src="img/testimonial-3.jpg" alt="">
+                    <h4>Vikram Singh</h4>
+                    <span>Internal Audit Head, PQR Bank</span>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-text border rounded p-4 pt-5 mb-5">
+                        <div class="btn-square bg-white border rounded-circle">
+                            <i class="fa fa-quote-right fa-2x text-primary"></i>
+                        </div>
+                        The workflow automation and maker-checker controls have significantly improved our audit quality. We're now truly audit-ready at all times with zero missed filings.
+                    </div>
+                    <img class="rounded-circle mb-3" src="img/testimonial-4.jpg" alt="">
+                    <h4>Deepa Joshi</h4>
+                    <span>Operations Manager, LMN Co-op Bank</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+     <!-- Demo Modal -->
+    <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="demoModalLabel">Request a Demo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="demoName" placeholder="Your Name">
+                                            <label for="demoName">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="demoEmail" placeholder="Your Email">
+                                            <label for="demoEmail">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="demoPhone" placeholder="Your Phone">
+                                            <label for="demoPhone">Your Phone</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="demoOrgType">
+                                                <option value="">Select Organization Type</option>
+                                                <option value="bank">Bank</option>
+                                                <option value="nbfc">NBFC</option>
+                                                <option value="other">Other Financial Institution</option>
+                                            </select>
+                                            <label for="demoOrgType">Organization Type</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="demoCompany" placeholder="Company Name">
+                                            <label for="demoCompany">Company Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Your Requirements" id="demoMessage" style="height: 100px"></textarea>
+                                            <label for="demoMessage">Tell us about your compliance challenges</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <h6>Preferred Demo Time:</h6>
+                                        <div class="row g-2">
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <input type="date" class="form-control" id="demoDate">
+                                                    <label for="demoDate">Preferred Date</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="demoTime">
+                                                        <option value="">Select Time</option>
+                                                        <option value="10:00">10:00 AM</option>
+                                                        <option value="11:00">11:00 AM</option>
+                                                        <option value="14:00">2:00 PM</option>
+                                                        <option value="15:00">3:00 PM</option>
+                                                        <option value="16:00">4:00 PM</option>
+                                                    </select>
+                                                    <label for="demoTime">Preferred Time</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-primary btn-lg px-5" type="submit">Schedule Demo</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light rounded p-4 h-100">
+                                <h6 class="mb-3">Contact Information</h6>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fa fa-map-marker-alt text-primary me-3"></i>
+                                    <div>
+                                        <p class="mb-0">Noida, India</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fa fa-phone-alt text-primary me-3"></i>
+                                    <div>
+                                        <p class="mb-0">+91 22 6789 0123</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fa fa-envelope text-primary me-3"></i>
+                                    <div>
+                                        <p class="mb-0">sanjay.yadav@kalolytic.com</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <h6 class="mb-2">What to Expect:</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-check text-primary me-2"></i>30-minute personalized demo</li>
+                                    <li><i class="fa fa-check text-primary me-2"></i>Live Q&A session</li>
+                                    <li><i class="fa fa-check text-primary me-2"></i>Customized use cases</li>
+                                    <li><i class="fa fa-check text-primary me-2"></i>Implementation roadmap</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Noida, India</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 22 6789 0123</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>sanjay.yadav@kalolytic.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Solutions</h4>
+                    <a class="btn btn-link" href="">Audit Management System</a>
+                    <a class="btn btn-link" href="">Compliance Management</a>
+                    <a class="btn btn-link" href="">RBI Returns Management</a>
+                    <a class="btn btn-link" href="">Regulatory Reporting</a>
+                    <a class="btn btn-link" href="">Risk Management</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Solutions</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Newsletter</h4>
+                    <p>Stay updated with latest compliance requirements and product updates.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Komplieye</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Designed for Banks & NBFCs | <a class="border-bottom" href="privacy.html">Privacy Policy</a> |
+                     <a class="border-bottom" href="data.html">Data Protection</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+     <!-- Floating Social Media Icons -->
+        <div class="floating-social">
+            <a href="https://wa.me/919876543210" class="whatsapp" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://t.me/komplieye" class="telegram" target="_blank" title="Telegram">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+        </div>
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

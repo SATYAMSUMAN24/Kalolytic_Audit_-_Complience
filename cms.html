@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Compliance Management System - Komplieye Solutions</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="compliance management system, RBI compliance, regulatory reporting, compliance monitoring, workflow automation" name="keywords">
+    <meta content="Comprehensive Compliance Management System for banks and NBFCs. RBI compliance, regulatory reporting, workflow automation, and real-time monitoring." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt text-primary me-2"></i>Noida, India</small>
+                <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>24/7 Support</small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small><i class="fa fa-envelope text-primary me-2"></i>sanjay.yadav@kalolytic.com</small>
+                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>+91 22 6789 0123</small>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <img src="/logo/01.png" alt="Komplieye Logo" class="img-fluid" style="height:50px;">
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="service.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Solutions</a>
+                        <div class="dropdown-menu border-light m-0">
+                            <a href="ams.html" class="dropdown-item">Audit Management System</a>
+                            <a href="cms.html" class="dropdown-item active">Compliance Management</a>
+                            <a href="ai.html" class="dropdown-item">AI & Automation</a>
+                            <a href="role.html" class="dropdown-item">Role Based Specific Features</a>
+                            <a href="usecases.html" class="dropdown-item">Real-world Use Cases</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Resources</a>
+                        <div class="dropdown-menu border-light m-0">
+                            <a href="project.html" class="dropdown-item">Case Studies</a>
+                            <a href="feature.html" class="dropdown-item">Features</a>
+                            <a href="team.html" class="dropdown-item">Our Team</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                            <a href="blog.html" class="dropdown-item">Blog</a>
+                            <a href="404.html" class="dropdown-item">Roadmap</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="d-none d-lg-flex ms-2">
+                    <button class="btn btn-primary btn-sm rounded-pill me-3" data-bs-toggle="modal" data-bs-target="#demoModal">
+                        <small>Request Demo</small>
+                    </button>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                        <small class="fab fa-facebook-f text-primary"></small>
+                    </a>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                        <small class="fab fa-twitter text-primary"></small>
+                    </a>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                        <small class="fab fa-linkedin-in text-primary"></small>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <h1 class="display-3 mb-4 animated slideInDown">Compliance Management System</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="service.html">Solutions</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Compliance Management</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Hero Section Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop" alt="Compliance Management Dashboard">
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="display-5 mb-4">Comprehensive Compliance Management System</h1>
+                    <p class="mb-4">Komplieye's Compliance Management System ensures your bank stays fully compliant with RBI regulations and internal policies through intelligent automation and real-time tracking. It covers everything a compliance team needs – from scheduling regulatory tasks to filing returns and managing policy changes.</p>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-calendar-check text-primary me-3 fa-2x"></i>
+                                <div>
+                                    <h6 class="mb-0">No Missed Filings</h6>
+                                    <small>100% on-time compliance</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-shield-alt text-primary me-3 fa-2x"></i>
+                                <div>
+                                    <h6 class="mb-0">Complete Audit Trail</h6>
+                                    <small>Full transparency & accountability</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- Features Section Start -->
+    <div class="container-xxl py-5 bg-light">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Key Features</p>
+                <h1 class="display-5 mb-5">Complete Compliance Lifecycle Management</h1>
+            </div>
+
+            <!-- Feature 1: Compliance Calendar -->
+            <div class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                            <span class="fw-bold">1</span>
+                        </div>
+                        <h3 class="mb-0 text-primary">Compliance Calendar & Scheduling</h3>
+                    </div>
+                    <p class="mb-4">The platform provides a comprehensive Compliance Calendar that centralizes all compliance activities and deadlines in one view. Whether it's a monthly RBI return, a quarterly internal compliance check, or a one-time regulatory inspection, you can schedule and track it on this calendar.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-calendar text-primary me-2"></i>Centralized compliance calendar view</li>
+                        <li class="mb-2"><i class="fa fa-bell text-primary me-2"></i>Automated reminders and alerts</li>
+                        <li class="mb-2"><i class="fa fa-sync text-primary me-2"></i>Recurring task automation</li>
+                        <li class="mb-0"><i class="fa fa-eye text-primary me-2"></i>Color-coded status indicators</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <img class="img-fluid rounded shadow" src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop" alt="Compliance Calendar Dashboard">
+                </div>
+            </div>
+
+            <!-- Feature 2: Workflow-Based Monitoring -->
+            <div class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-6 order-lg-2 wow fadeInRight" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                            <span class="fw-bold">2</span>
+                        </div>
+                        <h3 class="mb-0 text-primary">Workflow-Based Compliance Monitoring</h3>
+                    </div>
+                    <p class="mb-4">Every compliance activity in Komplieye follows a defined workflow with maker-checker controls and turnaround time (TAT) tracking. Through the Monitor module, users execute compliance tasks under guided steps and approval flows.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-users text-primary me-2"></i>Maker-checker approval controls</li>
+                        <li class="mb-2"><i class="fa fa-clock text-primary me-2"></i>SLA timeline tracking with visual indicators</li>
+                        <li class="mb-2"><i class="fa fa-history text-primary me-2"></i>Complete audit trail documentation</li>
+                        <li class="mb-0"><i class="fa fa-chart-line text-primary me-2"></i>Real-time progress monitoring</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 order-lg-1 wow fadeInLeft" data-wow-delay="0.3s">
+                    <img class="img-fluid rounded shadow" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Workflow Management System">
+                </div>
+            </div>
+
+            <!-- Feature 3: Regulatory Content Management -->
+            <div class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                            <span class="fw-bold">3</span>
+                        </div>
+                        <h3 class="mb-0 text-primary">Regulatory Content Management</h3>
+                    </div>
+                    <p class="mb-4">Staying on top of regulatory changes is effortless with Komplieye's Regulation module. This serves as a centralized library for all your regulatory documents – RBI circulars, Master Directions, Acts, as well as your internal policies and SOPs.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-brain text-primary me-2"></i>AI-powered document parsing</li>
+                        <li class="mb-2"><i class="fa fa-book text-primary me-2"></i>Centralized regulatory library</li>
+                        <li class="mb-2"><i class="fa fa-sitemap text-primary me-2"></i>Policy mapping to internal processes</li>
+                        <li class="mb-0"><i class="fa fa-code-branch text-primary me-2"></i>Version-controlled approvals</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <img class="img-fluid rounded shadow" src="/logo/d.jpeg" alt="Document Management AI" style="width: 500px; height: 350px;">
+                </div>
+            </div>
+
+            <!-- Feature 4: RBI Returns Management -->
+            <div class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-6 order-lg-2 wow fadeInRight" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                            <span class="fw-bold">4</span>
+                        </div>
+                        <h3 class="mb-0 text-primary">RBI Returns Management & Reporting</h3>
+                    </div>
+                    <p class="mb-4">Komplieye acts as a dedicated regulatory reporting software for managing all your RBI and other regulatory returns. It comes with a master library of RBI-defined returns pre-loaded into the system.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-database text-primary me-2"></i>Pre-loaded RBI returns library</li>
+                        <li class="mb-2"><i class="fa fa-upload text-primary me-2"></i>One-click submission integration</li>
+                        <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Automated data validation</li>
+                        <li class="mb-0"><i class="fa fa-calendar-alt text-primary me-2"></i>Deadline tracking & alerts</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 order-lg-1 wow fadeInLeft" data-wow-delay="0.3s">
+                    <img class="img-fluid rounded shadow" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop" alt="RBI Returns Dashboard">
+                </div>
+            </div>
+
+            <!-- Feature 5: Issue & Task Management -->
+            <div class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                            <span class="fw-bold">5</span>
+                        </div>
+                        <h3 class="mb-0 text-primary">Issue Management & Task Tracking</h3>
+                    </div>
+                    <p class="mb-4">Compliance doesn't end with filing returns or updating policies – it also involves remediating issues identified in audits or inspections. Komplieye's CMS includes a powerful Task Management module that captures all compliance-related tasks and issues in one place.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-tasks text-primary me-2"></i>Comprehensive task assignment & tracking</li>
+                        <li class="mb-2"><i class="fa fa-exclamation-triangle text-primary me-2"></i>Issue escalation alerts</li>
+                        <li class="mb-2"><i class="fa fa-paperclip text-primary me-2"></i>Evidence & document attachment</li>
+                        <li class="mb-0"><i class="fa fa-chart-bar text-primary me-2"></i>Status tracking & reporting</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <img class="img-fluid rounded shadow" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Task Management Dashboard">
+                </div>
+            </div>
+
+            <!-- Feature 6: Real-Time Dashboard -->
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 order-lg-2 wow fadeInRight" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                            <span class="fw-bold">6</span>
+                        </div>
+                        <h3 class="mb-0 text-primary">Real-Time Compliance Dashboard</h3>
+                    </div>
+                    <p class="mb-4">For CXOs and Compliance Heads, Komplieye offers a real-time Compliance Dashboard that serves as a command center for your institution's compliance health. At any moment, you can log in and see key KPIs and visualizations.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-tachometer-alt text-primary me-2"></i>Real-time compliance KPIs</li>
+                        <li class="mb-2"><i class="fa fa-map text-primary me-2"></i>Branch-wise compliance heatmap</li>
+                        <li class="mb-2"><i class="fa fa-chart-pie text-primary me-2"></i>Trend analysis & reporting</li>
+                        <li class="mb-0"><i class="fa fa-filter text-primary me-2"></i>Customizable filtering & drill-down</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 order-lg-1 wow fadeInLeft" data-wow-delay="0.3s">
+                    <img class="img-fluid rounded shadow" src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop" alt="Real-time Analytics Dashboard">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features Section End -->
+
+    <!-- Outcomes Section Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Outcomes</p>
+                <h1 class="display-5 mb-5">Measurable Compliance Results</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="text-center p-4 bg-light rounded">
+                        <i class="fa fa-calendar-check fa-3x text-primary mb-3"></i>
+                        <h4 class="text-primary">No Missed Filings</h4>
+                        <p class="mb-0">100% on-time regulatory submissions with automated reminders and tracking</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="text-center p-4 bg-light rounded">
+                        <i class="fa fa-cogs fa-3x text-primary mb-3"></i>
+                        <h4 class="text-primary">Streamlined Workflows</h4>
+                        <p class="mb-0">Automated compliance processes with maker-checker controls and audit trails</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="text-center p-4 bg-light rounded">
+                        <i class="fa fa-history fa-3x text-primary mb-3"></i>
+                        <h4 class="text-primary">Complete Audit Trail</h4>
+                        <p class="mb-0">Full documentation and transparency for regulatory scrutiny and internal reviews</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="text-center p-4 bg-light rounded">
+                        <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
+                        <h4 class="text-primary">Proactive Risk Management</h4>
+                        <p class="mb-0">Early identification and resolution of compliance issues before they escalate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Outcomes Section End -->
+
+    <!-- CTA Section Start -->
+    <div class="container-xxl py-5 bg-primary">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-8 wow fadeInLeft" data-wow-delay="0.1s">
+                    <h2 class="text-white mb-3">Ready to Transform Your Compliance Management?</h2>
+                    <p class="text-white mb-0">Join leading banks and NBFCs who have revolutionized their compliance processes with Komplieye's intelligent automation platform.</p>
+                </div>
+                <div class="col-lg-4 text-center wow fadeInRight" data-wow-delay="0.3s">
+                    <button class="btn btn-light btn-lg px-5" data-bs-toggle="modal" data-bs-target="#demoModal">
+                        <i class="fa fa-play-circle me-2"></i>Request Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CTA Section End -->
+
+    <!-- Demo Modal -->
+    <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="demoModalLabel">Request a Demo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="demoName" placeholder="Your Name">
+                                            <label for="demoName">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="demoEmail" placeholder="Your Email">
+                                            <label for="demoEmail">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="demoPhone" placeholder="Your Phone">
+                                            <label for="demoPhone">Your Phone</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="demoOrgType">
+                                                <option value="">Select Organization Type</option>
+                                                <option value="bank">Bank</option>
+                                                <option value="nbfc">NBFC</option>
+                                                <option value="other">Other Financial Institution</option>
+                                            </select>
+                                            <label for="demoOrgType">Organization Type</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="demoCompany" placeholder="Company Name">
+                                            <label for="demoCompany">Company Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Your Requirements" id="demoMessage" style="height: 100px"></textarea>
+                                            <label for="demoMessage">Tell us about your compliance challenges</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-primary btn-lg px-5" type="submit">Schedule Demo</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light rounded p-4 h-100">
+                                <h6 class="mb-3">What You'll See:</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-check text-primary me-2"></i>Live compliance dashboard</li>
+                                    <li><i class="fa fa-check text-primary me-2"></i>RBI returns automation</li>
+                                    <li><i class="fa fa-check text-primary me-2"></i>Workflow demonstrations</li>
+                                    <li><i class="fa fa-check text-primary me-2"></i>ROI calculations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Noida, India</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 22 6789 0123</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>sanjay.yadav@kalolytic.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Solutions</h4>
+                    <a class="btn btn-link" href="ams.html">Audit Management System</a>
+                    <a class="btn btn-link" href="cms.html">Compliance Management</a>
+                    <a class="btn btn-link" href="">RBI Returns Management</a>
+                    <a class="btn btn-link" href="">Regulatory Reporting</a>
+                    <a class="btn btn-link" href="">Risk Management</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="service.html">Our Solutions</a>
+                    <a class="btn btn-link" href="privacy.html">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Newsletter</h4>
+                    <p>Stay updated with latest compliance requirements and product updates.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Komplieye</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Designed for Banks & NBFCs | <a class="border-bottom" href="privacy.html">Privacy Policy</a> |
+                     <a class="border-bottom" href="data.html">Data Protection</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
